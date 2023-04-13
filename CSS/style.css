@@ -17,7 +17,7 @@
         }
 
         p {
-            margin: auto;
+            margin: 20px;
             padding: 2em;
             text-align: center;
         }
@@ -75,7 +75,7 @@
         }
 
         .middle img {
-            margin: 20px;
+            margin: 15px;
             outline: 3px solid #808080;
             width: 100px;
             height: 180px;
@@ -106,7 +106,7 @@
         }
 
         .subdiv {
-            margin: auto;
+            margin: 20px;
             align-content: center;
             max-width: auto;
             height: auto;

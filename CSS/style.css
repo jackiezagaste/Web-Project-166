@@ -1,125 +1,206 @@
-        body {
-            background-color: #d4d4d4;
-            border: 5px;
-            text-align: center;
-            margin: auto;
-            padding: 2em;
-            max-width: 800px;
-            line-height: 20px;
-            align-content: center;
-            font-family: Tahoma, Verdana, sans-serif;
-            font-size: 20px;
-        }
+* {
+    padding: 0;
+    margin: 0;
+}
 
-        div {
-            align-content: center;
+body {
+    background-color: #d4d4d4;
+    border: 5px;
+    text-align: center;
+    margin: auto;
+    padding: 2em;
+    max-width: 800px;
+    line-height: 20px;
+    align-content: center;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+}
 
-        }
+div {
+    align-content: center;
 
-        p {
-            margin: 20px;
-            padding: 2em;
-            text-align: center;
-        }
+}
 
-        .container1 {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
-            justify-content: center;
-            flex-direction: column;
-        }
+p {
+    margin: 20px;
+    padding: 2em;
+    text-align: center;
+}
 
-        .container1 img {
-            margin: 20px;
-            outline: 4px solid #808080;
-            width: 400px;
-            height: 550px;
-        }
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
-            justify-content: center;
-            flex-direction: column;
+.container1 img {
+    margin: 20px;
+    outline: 4px solid #808080;
+    width: 340px;
+    height: 490px;
+}
 
-        }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
 
-        .header {
-            margin: 20px;
-            padding: 2em;
-            width: auto;
-            height: auto;
-            border: 2px solid;
-            border-color: black;
+}
 
-        }
+.header {
+    margin: 20px;
+    padding: 2em;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    border-color: black;
 
-        .middle {
-            margin: 20px;
-            padding: 1em;
-            width: auto;
-            height: auto;
-            border: 2px solid;
-            border-color: black;
-        }
+}
 
-        .footer {
-            margin: 20px;
-            padding: 2em;
-            width: auto;
-            height: auto;
-            border: 2px solid;
-            border-color: black;
-        }
+.middle {
+    margin: 20px;
+    padding: 1em;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    border-color: black;
+}
 
-        .middle img {
-            margin: 15px;
-            outline: 3px solid #808080;
-            width: 100px;
-            height: 180px;
-        }
+.footer {
+    margin: 20px;
+    padding: 2em;
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    border-color: black;
+}
 
-        .middle img:hover {
-            cursor: pointer;
-            margin-top: 5px;
-        }
+.middle img {
+    margin: 15px;
+    outline: 3px solid #808080;
+    width: 100px;
+    height: 180px;
+}
 
-        .header {
-            margin: 20px;
-            align-content: center;
-            max-width: auto;
-            height: auto;
-            padding: 2em;
-            background-color: azure;
-        }
+.middle img:hover {
+    cursor: pointer;
+    margin-top: 5px;
+}
 
-        .mainsection {
-            margin: 20px;
-            align-content: center;
-            max-width: auto;
-            height: auto;
-            padding: 2em;
-            background-color: azure;
-            border: 2px solid black;
-        }
+.header {
+    margin: 20px;
+    align-content: center;
+    max-width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: #a7bbcb;
+}
 
-        .subdiv {
-            margin: 20px;
-            align-content: center;
-            max-width: auto;
-            height: auto;
-            padding: 2em;
-            background-color: #CCCCFF;
-            border: 2px solid black;
-        }
+.mainsection {
+    margin: 20px;
+    align-content: center;
+    max-width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: #a7bbcb;
+    border: 2px solid black;
+}
 
-        .footer {
-            margin: 20px;
-            align-content: center;
-            max-width: auto;
-            height: auto;
-            padding: 2em;
-            background-color: azure;
-        }
+.subdiv {
+    margin: 20px;
+    align-content: center;
+    max-width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: #ffcc00;
+    border: 2px solid black;
+}
+
+.footer {
+    margin: 20px;
+    align-content: center;
+    max-width: auto;
+    height: auto;
+    padding: 2em;
+    background-color: #a7bbcb;
+}
+
+/*    nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    margin: 20px;
+    float: left;
+}
+
+li a {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navMenu {
+    align-content: center;
+}
+
+.navMenu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: darkred;
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: darkred;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+    transform: translateX(30px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+    transform: translateX(110px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+    transform: translateX(200px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+    transform: translateX(285px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}

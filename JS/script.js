@@ -35,3 +35,11 @@ function newPicture4() {
 function oldPicture4() {
     document.getElementById("fog").src="/Images/fog.jpg";
 }
+
+//move
+let image = document.getElementById('building');
+let images = ['building.jpg','city.jpg','fish.jpg','fog.jpg','rain.jpg']
+setInterval(function(){
+    let random = Math.floor(Math.random() * 4);
+    image.src = images[random];
+}, 800);

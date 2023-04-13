@@ -84,6 +84,8 @@ p {
     outline: 3px solid #808080;
     width: 100px;
     height: 180px;
+    
+    transition: 0.3s;
 }
 
 .middle img:hover {
@@ -168,13 +170,13 @@ nav {
 }
 
 .navMenu a:hover {
-    color: darkred;
+    color: #ffcc00;
 }
 
 .navMenu .dot {
     width: 6px;
     height: 6px;
-    background: darkred;
+    background: #ffcc00;
     border-radius: 50%;
     opacity: 0;
     transform: translateX(30px);

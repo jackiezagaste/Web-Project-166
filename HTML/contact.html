@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+    <title>My First Web Site</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <script src="/JS/script.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navMenu">
+
+        <ul>
+
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="service.html" target="_blank">Service</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div>
+
+        <div class="header">
+            <p>Hi there, we are here to showcase the work of several extremely talented photographers!</p>
+        </div>
+
+        <div class="mainsection">
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.979834617627!2d-111.99836460000002!3d33.44983190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0e86227901f1%3A0x6f3e855d11e11760!2sGateWay%20Community%20College-Washington%20Campus!5e0!3m2!1sen!2sus!4v1683060640103!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="subdiv">
+
+                <p>What we do here: Our website was developed to give talented artists in photography a chance to show off their work to people all around the world.</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Want to see more? Stay in contact with us by filling out the form at the bottom right side of the page!</p>
+        </div>
+
+    </div>
+
+    <button class="open-button" onclick="openForm()">Form</button>
+
+    <div class="form-popup" id="myForm">
+
+        <form action="mailto:jaquelinezagaste@gmail.com" method="post" enctype="text/plain" name="EmailForm" class="form-container">
+            <h1>Register</h1>
+
+            <label for="first_name"><b>First Name</b></label>
+            <input type="text" name="first_name" id="first_name" required>
+
+            <label for="last_name"><b>Last Name</b></label>
+            <input type="text" name="last_name" id="last_name" required>
+
+            <label for="date"><b>Date</b></label>
+            <input type="date" placeholder="Enter Date" name="date" required>
+
+            <br />
+
+            <label for="cell_phone"><b>Cell Phone</b></label>
+            <input type="cell_phone" placeholeder="Enter Cell Phone Number" name="cell_phone" required>
+
+            <br />
+
+            <label for="school_name"><b>School Name</b></label>
+            <input type="text" name="school_name" id="school_name" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

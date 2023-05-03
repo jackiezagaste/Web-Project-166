@@ -1,7 +1,9 @@
+/*
 * {
     padding: 0;
     margin: 0;
 }
+*/
 
 body {
     background-color: #d4d4d4;
@@ -22,7 +24,7 @@ div {
 }
 
 p {
-    margin: 20px;
+    margin: auto;
     padding: 2em;
     text-align: center;
 }
@@ -84,7 +86,7 @@ p {
     outline: 3px solid #808080;
     width: 100px;
     height: 180px;
-    
+
     transition: 0.3s;
 }
 
@@ -205,4 +207,134 @@ nav {
     transform: translateX(285px);
     transition: all 0.2s ease-in-out;
     opacity: 1;
+}
+
+/*Form*/
+    {
+    box-sizing: border-box;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/*hide form*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/*form container thingy*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/*full input fields*/
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*if focused it does something*/
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*submit and login button*/
+.form-container .btn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*cancel button*/
+.form-container .cancel {
+    background: red;
+}
+
+/*hover effects on buttons*/
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/*table*/
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.table {
+    border: 1px solid;
+}
+
+/*map*/
+#map {
+    height: auto;
+}
+
+.custop-map-control-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba (0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-map-control-button: hover {
+    background: rgb(235, 235, 235)
+}
+
+/*button for registering*/
+button {
+    text-decoration: none;
+    background-color: #26619C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a.register {
+    text-decoration: none;
+    color: white;
 }
